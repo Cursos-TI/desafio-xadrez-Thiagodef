@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+// Constantes para quantidade de movimentos
+#define BISPO_MOV 5
+#define TORRE_MOV 5
+#define RAINHA_MOV 8
+
+int main() {
+    // Cabeçalho explicativo
+    printf("=== SIMULADOR DE MOVIMENTAÇÃO DE PEÇAS ===\n\n");
+
+    // ===== MOVIMENTAÇÃO DO BISPO =====
+    // Diagonal superior direita = combinação de "Cima" e "Direita"
+    printf("Movimentação do BISPO (5 casas na diagonal superior direita):\n");
+    for (int i = 0; i < BISPO_MOV; i++) {
+        printf("Cima\n");
+        printf("Direita\n");
+    }
+    printf("\n");
+
+    // ===== MOVIMENTAÇÃO DA TORRE =====
+    // 5 casas para a Direita
+    printf("Movimentação da TORRE (5 casas para a direita):\n");
+    int j = 0;
+    while (j < TORRE_MOV) {
+        printf("Direita\n");
+        j++;
+    }
+    printf("\n");
+
+    // ===== MOVIMENTAÇÃO DA RAINHA =====
+    // 8 casas para a Esquerda
+    printf("Movimentação da RAINHA (8 casas para a esquerda):\n");
+    int k = 0;
+    do {
+        printf("Esquerda\n");
+        k++;
+    } while (k < RAINHA_MOV);
+    printf("\n");
+
+    // Fim do programa
+    printf("=== FIM DAS MOVIMENTAÇÕES ===\n");
+
+    return 0;
+}
